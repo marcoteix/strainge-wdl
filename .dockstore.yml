@@ -1,8 +1,8 @@
 version: 1.2
-workflows:
-  - subclass: WDL
-    primaryDescriptorPath: /workflows/strainGE_PE.wdl
-    testParameterFiles:
-      - test/strainGE_PE.json
-  authors:
-  - name: Marco Teixeira
+tools:
+  - subclass: CWL
+    primaryDescriptorPath: workflows/strainGE_PE.wdl
+    testParameterFiles: /test/strainGE_PE.json
+    authors:
+      - name: Marco Teixeira
+        email: mcarvalh@broadinstitute.org
