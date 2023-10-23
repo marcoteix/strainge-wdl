@@ -1,5 +1,5 @@
 version: 1.2
-tools:
+workflows:
   - subclass: WDL
     primaryDescriptorPath: workflows/strainGE_PE.wdl
     testParameterFiles: /test/strainGE_PE.json
