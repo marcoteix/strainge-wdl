@@ -27,7 +27,8 @@ workflow strainge_pe {
             kmer_size = db_kmer_size,
             straingst_reference_db = straingst_reference,
             straingst_reference_fastas = straingst_ref_fastas_dir,
-            straingst_reference_similarities = straingst_similarities
+            straingst_reference_similarities = straingst_similarities,
+            straingst_reference_fastas_files = straingst_ref_fastas_files
     }
     output {
         File straingst_kmerized_reads = StrainGE_PE.straingst_kmerized_reads

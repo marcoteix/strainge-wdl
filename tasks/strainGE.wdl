@@ -9,6 +9,9 @@ task StrainGE_PE {
     File straingst_reference_db
     File straingst_reference_similarities
     File straingst_reference_fastas
+    Array[File] straingst_reference_fastas_files
+    # This forces cromwell to mount the FASTA files inside the directory,
+    # but the variable is not used in the workflow
     String docker = "marcoteix/strainge:0.0.2"
     Int disk_size = 100
     Int cpus = 4
