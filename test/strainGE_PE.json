@@ -1,14 +1,15 @@
 {
   "strainge_pe.sample_id": "test-sample",
   "strainge_pe.StrainGE_PE.memory": 16,
-  "strainge_pe.clean_reads_1": "sample/test_R1.fastq.gz",
-  "strainge_pe.clean_reads_2": "sample/test_R2.fastq.gz",
+  "strainge_pe.clean_reads_1": "/home/mcarvalh/strainge/test_sequencing_data/dzd-uci-780_R1.fastq.gz",
+  "strainge_pe.clean_reads_2": "/home/mcarvalh/strainge/test_sequencing_data/dzd-uci-780_R2.fastq.gz",
   "strainge_pe.StrainGE_PE.docker": "marcoteix/strainge:0.0.2",
-  "strainge_pe.straingst_ref_fastas": "database/fasta",
+  "strainge_pe.straingst_ref_fastas_dir": "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/fasta",
   "strainge_pe.StrainGE_PE.disk_size": 100,
   "strainge_pe.db_kmer_size": 23,
   "strainge_pe.StrainGE_PE.cpus": 4,
-  "strainge_pe.straingst_reference": "database/test_straingst_db.hdf5",
-  "strainge_pe.straingst_similarities": "database/similarities.tsv"
+  "strainge_pe.straingst_reference": "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/debug_k23.hdf5",
+  "strainge_pe.straingst_similarities": "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/similarities.tsv",
+  "strainge_pe.straingst_ref_fastas_files": ["/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/fasta/GCF_032354275.1_ASM3235427v1_genomic.fna.gz", "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/fasta/GCF_032361125.1_ASM3236112v1_genomic.fna.gz", "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/fasta/GCF_032365155.1_ASM3236515v1_genomic.fna.gz", "/home/mcarvalh/strainge/strainge_workflow/docker/strainge_databases/debug/fasta/GCF_032367395.1_ASM3236739v1_genomic.fna.gz"]
 }
 

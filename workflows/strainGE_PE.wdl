@@ -15,7 +15,7 @@ workflow strainge_pe {
         File straingst_reference
         File straingst_similarities
         File straingst_ref_fastas_dir
-        File straingst_ref_fastas_files 
+        Array[File] straingst_ref_fastas_files 
         # This forces cromwell to mount the FASTA files inside the directory,
         # but the variable is not used in the workflow
     }
