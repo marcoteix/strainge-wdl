@@ -14,7 +14,10 @@ workflow strainge_pe {
         Int db_kmer_size
         File straingst_reference
         File straingst_similarities
-        File straingst_ref_fastas
+        File straingst_ref_fastas_dir
+        File straingst_ref_fastas_files 
+        # This forces cromwell to mount the FASTA files inside the directory,
+        # but the variable is not used in the workflow
     }
     call strainge.StrainGE_PE {
         input:
@@ -23,7 +26,7 @@ workflow strainge_pe {
             reads_2 = clean_reads_2,
             kmer_size = db_kmer_size,
             straingst_reference_db = straingst_reference,
-            straingst_reference_fastas = straingst_ref_fastas,
+            straingst_reference_fastas = straingst_ref_fastas_dir,
             straingst_reference_similarities = straingst_similarities
     }
     output {
